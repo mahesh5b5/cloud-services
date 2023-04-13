@@ -35,7 +35,7 @@ const DeviceCatalog = () => {
       <div className='max-h-screen overflow-auto p-2'>
         {devices.map(({ name, icon, isAvailable }) =>
           <div className={` cursor-pointer border border-gray-300 p-3 rounded-md m-4 inline-block w-52 ${isAvailable ? 'border-b-4 border-b-green-600' : 'border-b-4 border-b-red-600'}`}>
-            <div className='flex'><img src={icon} className='h-6' /> <span className='ml-2'>{name}</span></div>
+            <div className='flex'><img src={icon} className='h-6' alt={'device'} /> <span className='ml-2'>{name}</span></div>
             <div className='text-xs mt-1 text-gray-400 text-right'> {isAvailable ? 'Available' : 'Unavailable'}</div>
           </div>)}
       </div>
